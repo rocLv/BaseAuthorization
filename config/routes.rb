@@ -1,15 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
-
-  devise_scope :user do
-    get "sign_in", to: 'devise/sessions#new',      via:'get'
-    get 'sign_up', to: 'devise/registrations#new', via:'get'
-  end
-
-  root 'users#index'
-  
- 
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
