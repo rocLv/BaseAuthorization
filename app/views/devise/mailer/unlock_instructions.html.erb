@@ -1,0 +1,12 @@
+
+<div class="mailer-info">
+	<div class="col-sm-8 col-sm-offset-2">
+		<p> <%= @resource.email %>你好!</p>
+
+		<p>因为你超过了密码重试的次数，因此你的账户暂时被锁.</p>
+
+		<p>点击以下按钮解锁账户:</p>
+
+		<p><%= link_to '解锁账户', unlock_url(@resource, :unlock_token => @token) %></p>
+	</div>
+</div>

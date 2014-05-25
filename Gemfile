@@ -16,6 +16,13 @@ end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
+gem 'devise','3.2'
+
+#Use bootstrap-sass to convert less to sass
+gem 'bootstrap-sass','~>3.1.1'
+gem 'sprockets','2.11.0'
+
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '2.5.0'
 # Use CoffeeScript for .js.coffee assets and views
