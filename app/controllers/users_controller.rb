@@ -4,8 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
-    resource = User.new
-    render 'devise/registrations/new'
+    redirect_to new_user_session_path unless user_signed_in?
   end
 
   def show
@@ -59,6 +58,7 @@ class UsersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
